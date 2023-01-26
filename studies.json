@@ -1,0 +1,48 @@
+{
+	"studies": {
+		"study1" :[
+			{
+					"periodo" : "2012 - 2014",
+					"titulo"        	: "Máster en Interacción Persona-Ordenador",
+					"institucion"       : "Instituto Tecnológico de Massachusetts"
+			},
+			{
+					"periodo" : "2008 - 2012",
+					"titulo"        	: "Licenciatura en Informática",
+					"institucion"       : "Universidad de Harvard"
+			}
+		],
+		"study2" : [
+			{
+					"periodo" : "2006 - 2010",
+					"titulo"        	: "LICENCIATURA EN CIENCIAS",
+					"institucion"       : "UNIVERSIDAD DE COLORADO BOULDER"
+			},
+			{
+					"periodo" : "2002 - 2006",
+					"titulo"        	: "PROGRAMA MAGNET DE TECNOLOGÍA",
+					"institucion"       : "ESCUELA SECUNDARIA JAMES BUCHANAN"
+			}
+			
+			],
+		"study3" : [
+			{
+					"periodo" : "2008 - 2010",
+					"titulo"        	: "Máster en Informática",
+					"institucion"       : "Universidad de California en Los Ángeles"
+			},
+			{
+					"periodo" : "2014 - 2015",
+					"titulo"        	: "Estudiante de pregrado",
+					"institucion"       : "Universidad de Toronto"
+			}
+			],
+		"study4" : [
+			{
+					"periodo" : "2012 - 2014",
+					"titulo"        	: "Diploma de Bachillerato Internacional",
+					"institucion"       : "Estudió en la India"
+			}
+			]		
+	}
+}

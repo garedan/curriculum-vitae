@@ -1,0 +1,100 @@
+{
+	"jobs": {
+		"job1" : [
+			{
+					"puesto" : "Ingeniero superior de software",
+					"lugar"        	: "Google",
+					"periodo"       : "2016 - Presente",
+					"desc1"        	: "Desarrollo de tecnología de indexación de bases de datos escalables",
+					"desc2"        	: "Creación de API GraphQL para acceder a Google Earth",
+					"desc3" 		: "Aprovechamiento de los conjuntos de datos de Waymo para duplicar la precisión de las estadísticas de tráfico"
+			},
+			{
+					"puesto" : "Ingeniero de software",
+					"lugar"        	: "Facebook",
+					"periodo"       : "2014 - 2016",
+					"desc1"        	: "Recopilación datos de afiliación política de millones de usuarios",
+					"desc2"        	: "Autor de historias de usuario y trazado de recorridos de usuario",
+					"desc3" 		: "Introducción de pruebas de regresión al marco de diseño de Yoga"
+			},
+			{
+					"puesto" : "Ingeniero de software en prácticas",
+					"lugar"        	: "Twitter",
+					"periodo"       : "2013 - 2014",
+					"desc1"        	: "Análisis y optimización de la cobertura de código a través de la arquitectura Scala",
+					"desc2"        	: "Creación de archivos XML de configuración del entorno del proyecto",
+					"desc3" 		: "Mantenimiento de conexiones TCP/IP con 250.000 usuarios concurrentes"
+			}
+		],
+		"job2" : [
+			{
+					"puesto" : "Especialista senior en diseño gráfico",
+					"lugar"        	: "Experion",
+					"periodo"       : "2019 - Presente",
+					"desc1"        	: "Líder en el diseño, desarrollo e implementación de los materiales de comunicación gráfica, maquetación y producción.",
+					"desc2"        	: "Delegue de tareas a los 7 miembros del equipo de diseño y asesoramiento en todos los aspectos del proyecto.",
+					"desc3" 		: "Responsable de supervisar la evaluación de todos los materiales gráficos para garantizar la calidad y precisión del diseño"
+			},
+			{
+					"puesto" : "Especialista en diseño gráfico",
+					"lugar"        	: "Stepping Stone Advertising",
+					"periodo"       : "2017 - 2018",
+					"desc1"        	: "Desarrollo de numerosos programas de marketing (logotipos, folletos,infografías, presentaciones y anuncios).",
+					"desc2"        	: "Gestión de hasta 5 proyectos o tareas en un momento dado mientras estaba bajo presión",
+					"desc3" 		: "Recomendación y consulta a clientes sobre el diseño gráfico más apropiado."
+			}
+		],
+		"job3" : [
+			{
+					"puesto" : "Desarrollador Web Senior",
+					"lugar"        	: "Allen Hamilton",
+					"periodo"       : "2011 - 2019",
+					"desc1"        	: "Planificación, desarrollo, prueba, despliegue y mantenimiento de aplicaciones web.",
+					"desc2"        	: "Traducción eficaz de los requisitos del cliente en diseños de aplicaciones y requisitos de sistemas.",
+					"desc3" 		: "Seguimiento de las políticas y procedimientos relacionados con los métodos de aplicación y estándares de calidad en todo momento."
+			},
+			{
+					"puesto" : "Desarrollador Web Junior",
+					"lugar"        	: "Millbank y Morrison",
+					"periodo"       : "2008 - 2011",
+					"desc1"        	: "Gestión de desarrollo front-end y back-end en los sistemas Portfolio Analyst, Employee Track y Account Managment de la empresa.",
+					"desc2"        	: "Identificación, diagnóstico y solución de problemas en el sitio web, incluidos enlaces no válidos, errores tipográficos y problemas de formato.",
+					"desc3" 		: "Evaluación de los sitios web de la competencia en cuanto a contenido, aspecto y estilo."
+			},
+			{
+					"puesto" : "Ingeniero independiente de iOS",
+					"lugar"        	: "Freelance",
+					"periodo"       : "2012 - Presente",
+					"desc1"        	: "Desarrollo de la aplicación SuperUltraCoolWeather utilizando la API de AccuWeather",
+					"desc2"        	: "Productos enviados a más de 1.000.000 de usuarios activos diarios",
+					"desc3" 		: "Evaluación y conocimiento de las nuevas normas, tecnologías y tendencias en el desarrollo de sitios web."
+			}
+		],
+		"job4" : [
+			{
+					"puesto" : "Ingeniero de Seguridad",
+					"lugar"        	: "LINE Corporation",
+					"periodo"       : "2019 - 2020",
+					"desc1"        	: "Principalmente enfocado en encontrar vulnerabilidades en los productos de LINE y sus afiliados.",
+					"desc2"        	: "Desarrollo de herramientas automatizadas de análisis de seguridad y herramientas para detectar riesgos potenciales.",
+					"desc3" 		: "Consultoría de seguridad, revisión de informes bugbounty, apoyo a la contratación, etc."
+			},
+			{
+					"puesto" : "Investigador de seguridad",
+					"lugar"        	: "SEWorks Inc.",
+					"periodo"       : "2014 - 2018",
+					"desc1"        	: "Centrado principalmente en la gestión del servidor central y el desarrollo de servicios backend.",
+					"desc2"        	: "Desarrollo de productos core, incluyendo maintanence de productos. (Utilicé python, GoLang+Redis, PHP, Java, etc.)",
+					"desc3" 		: "Realización frecuente de comprobaciones de vulnerabilidades y pruebas de penetración en productos emblemáticos."
+			},
+			{
+					"puesto" : "Ingeniero independiente de iOS",
+					"lugar"        	: "Freelance",
+					"periodo"       : "2012 - Presente",
+					"desc1"        	: "Desarrollo de la aplicación SuperUltraCoolWeather utilizando la API de AccuWeather",
+					"desc2"        	: "Productos enviados a más de 1.000.000 de usuarios activos diarios",
+					"desc3" 		: "Evaluación y conocimiento de las nuevas normas, tecnologías y tendencias en el desarrollo de sitios web."
+			}
+		]
+	}
+}
