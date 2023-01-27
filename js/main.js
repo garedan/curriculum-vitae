@@ -31,6 +31,21 @@ function adjustViewport() {
 }
 adjustViewport();
 
+$(document).on('click', '#btnExpand', function(){
+	if ($('.openBtn').hasClass('open')) {
+		alert('open')
+		$('.openBtn').removeClass('open').removeClass('fa-minus').addClass('fa-plus');
+		$('.openBtn').closest('.job').find('p').animate({
+		  'opacity':'0'
+		},200).slideUp();
+	  } else {
+		$('.openBtn').addClass('open').removeClass('fa-plus').addClass('fa-minus');
+		$('.openBtn').closest('.job').find('p').slideDown().animate({
+		  'opacity':'1'
+		},400);
+	  }
+})
+
 
 $('.contOut').animate({
 	'opacity':'1'

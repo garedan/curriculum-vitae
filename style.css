@@ -7,7 +7,6 @@ textarea {
   padding-bottom: 20px;
 }
 
-
 body {
   color: #2c2c2c;
   font-size: 14px;
@@ -17,7 +16,6 @@ body {
   }
 
 /* Barra de navegacion */
-
 .navbar {
   padding: 1rem;
   background-color: #925BFF;
@@ -30,7 +28,6 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  /* font-family: 'Rubik Dirt', cursive; */
   color: white;
 }
 
@@ -55,22 +52,22 @@ h1 {
   color: #584e4e;
 }
 
-.seccion-texto {
+/* .seccion-texto {
   font-size: 1.2rem;
-}
+} */
 
-.btn-info {
+/* .btn-info {
   font-size: 1.1rem;
   margin: 20px;
-}
+} */
 
-.texto-negro {
+/* .texto-negro {
   color: black;
-}
+} */
 
-.texto-blanco {
+/* .texto-blanco {
   color: white;
-}
+} */
 
 /* Seccion Hero */
 .social-icons a {
@@ -165,11 +162,9 @@ p {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  /* color: #615151; */
 }
 
 /* Sobre mi */
-
 .sobre-mi {
   height: 400px;
   padding: 10px;
@@ -182,7 +177,6 @@ p {
 }
 
 /* Experiencia */
-
 .experiencia {
   padding: 5px 40px 60px 40px;
   background: #FFD171;
@@ -225,7 +219,7 @@ p {
 
 /* Proyectos */
 
-.proyectos-recientes {
+/* .proyectos-recientes {
   padding: 40px;
 }
 
@@ -236,18 +230,18 @@ p {
   border-radius: 10px;
   display: block;
   transition: all 0.2s ease;
-}
+} */
 
-.proyectos-contenedor {
+/* .proyectos-contenedor {
   padding-top: 60px;
   margin-bottom: 40px;
-}
+} */
 .card {
   background: #FFD171;
   border: none;
 }
 
-.articulos .card {
+/* .articulos .card {
   width: 80%;
   max-width: 600px;
   margin: 20px;
@@ -258,9 +252,9 @@ p {
 .articulos .card-header {
   font-weight: bold;
 }
+ */
 
-
-.iconos-redes-sociales a {
+/* .iconos-redes-sociales a {
   width: 50px;
   height: 50px;
   display: flex;
@@ -286,13 +280,13 @@ p {
 
 .iconos-redes-sociales a:hover i {
   color: black;
-}
+} */
 
-.derechos-de-autor {
+/* .derechos-de-autor {
   font-size: 15px;
   color: #aeaeae;
   padding: 20px;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
@@ -301,6 +295,14 @@ p {
 
   .sobre-mi {
     height: 400px;
+  }
+
+  .contact-box {
+    margin-left: -35px;
+  }
+
+  .contact-box form {
+    margin-left: 20px;
   }
 }
 
@@ -322,6 +324,14 @@ p {
 
   .sobre-mi {
     height: 500px;
+  }
+
+  .contact-box {
+    margin-left: 0;
+  }
+
+  .contact-box form {
+    margin-left: 0;
   }
 } 
 
@@ -720,7 +730,6 @@ p {
 }
 .middle .job h2 span {
   float: right;
-  /* display: inline-block; */
   font-size: 16px;
   background: black;
   color: #fff;
