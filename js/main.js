@@ -116,6 +116,9 @@ function getDataFromJSON() {
 	const $showData3 = $("#valuediv");
 	const $raw = $("pre");
 	let datos;
+
+	let datos2 = [];
+	let obj = {};
 	
 	$.getJSON("./studies.json", (data) => {
 		let keys = Object.keys(data.studies);
@@ -157,6 +160,12 @@ function getDataFromJSON() {
 		
 		let keys = Object.keys(data.jobs);
 		let randomKey = keys[Math.floor(Math.random()*keys.length)];
+
+		obj['job'] =  data.jobs[randomKey];
+		datos2.push(obj.job[0].puesto);
+		//console.log("puesto", datos2);
+		let selector = document.getElementById("job1");
+		selector.innerHTML = datos2[0];
 		
 		const markup2 = data.jobs[randomKey]
 		  .map((item) => `
@@ -197,7 +206,7 @@ function getDataFromJSON() {
 
 		$raw.text(JSON.stringify(data, undefined, 2));
 		
-		//console.log("data.items", datos)
+		//console.log("data.items", datos2)
 		//console.log(randomKey)
 	  });
 }
