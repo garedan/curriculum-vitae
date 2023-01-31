@@ -10,7 +10,7 @@
     <!-- Titulo -->
     <title id="test">Jane Doe | Front end Academy - 2022</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon-32x32.png">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Iconos de Bootstrap -->
@@ -61,16 +61,13 @@
     <!-- Seccion Hero -->
     <section class="hero align-items-stretch">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img id="image2" class="hero-imagen-desarrollador rounded-circle" src="imagenes/imagenes-desarrolladores/desarrollador-ejemplo.svg" alt="Foto de Jane Doe">
+        <img id="image2" class="hero-imagen-desarrollador rounded-circle" src="imagenes/desarrollador-ejemplo.svg" alt="Foto de Jane Doe">
         <h1>Hola, soy <strong id="name2"></strong></h1>
         <p class="title2" id="edad" style="color: #fff;">32</p>
         <h2 id="job1">Designer & Web Developer</h2>
         <button onclick="getDataFromJSON(); getDataFromAPI()" id="btnOtro" class="btn btn-default btn3">Otro CV</button>
         <button id="btnExpand" class="btn btn-default btn3">Expandir todo</button>
       </div>
-      <!-- <div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
-      </div> -->
     </section>
     
     <!-- Sobre mi -->
@@ -134,10 +131,6 @@
 			</div>
     </div>
     <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
-      <!-- <button type="button" class="btn btn-info">
-        Ver más artículos
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </button> -->
     </a>
 
     
@@ -192,12 +185,13 @@
                       <div class="feature-icon">
                         <i class="fa fa-photo"></i>
                       </div>
-                      <h2 class="feature-title">Graphic Design</h2>
+                      <h2 class="feature-title">Diseño gráfico</h2>
                       <div class="feature-description">
                         <!-- <p>Projects with concept.</p> -->
-                        <span class="badge rounded-pill text-bg-primary">Typography</span>
-                        <span class="badge rounded-pill text-bg-primary">Delivering Presentations</span>
-                        <span class="badge rounded-pill text-bg-primary">Communication</span>
+                        <span class="badge rounded-pill text-bg-primary">Tipografía</span>
+                        <span class="badge rounded-pill text-bg-primary">Hacer presentaciones</span>
+                        <span class="badge rounded-pill text-bg-primary">Comunicación</span>
+                        <span class="badge rounded-pill text-bg-primary">Diseño UX</span>
                       </div>
                     </div>					
                   </div>
@@ -208,13 +202,15 @@
                       <div class="feature-icon">
                         <i class="fa fa-laptop"></i>
                       </div>
-                      <h2 class="feature-title">Web Design</h2>
+                      <h2 class="feature-title">Diseño web</h2>
                       <div class="feature-description">
                         <!-- <p>Projects with concept.</p> -->
                         <span class="badge rounded-pill text-bg-primary">HTML</span>
                         <span class="badge rounded-pill text-bg-primary">CSS</span>
                         <span class="badge rounded-pill text-bg-primary">JavaScript</span>
                         <span class="badge rounded-pill text-bg-primary">React</span>
+                        <span class="badge rounded-pill text-bg-primary">Diseño responsivo</span>
+                        <span class="badge rounded-pill text-bg-primary">Redacción</span>
                       </div>
                     </div>					
                   </div>
@@ -225,12 +221,13 @@
                       <div class="feature-icon">
                         <i class="bi bi-shield-fill-plus"></i>
                       </div>
-                      <h2 class="feature-title">Security</h2>
+                      <h2 class="feature-title">Seguridad</h2>
                       <div class="feature-description">
                         <!-- <p>Projects with concept.</p> -->
-                        <span class="badge rounded-pill text-bg-primary">Ethical Hacking</span>
-                        <span class="badge rounded-pill text-bg-primary">Network Architecture</span>
-                        <span class="badge rounded-pill text-bg-primary">Computer Forensics</span>
+                        <span class="badge rounded-pill text-bg-primary">Hacking ético</span>
+                        <span class="badge rounded-pill text-bg-primary">Arquitectura de red</span>
+                        <span class="badge rounded-pill text-bg-primary">Informática forense</span>
+                        <span class="badge rounded-pill text-bg-primary">Codificar</span>
                       </div>
                     </div>					
                   </div>
@@ -241,13 +238,13 @@
                       <div class="feature-icon">
                         <i class="fa fa-line-chart"></i>
                       </div>
-                      <h2 class="feature-title">Social Media</h2>
+                      <h2 class="feature-title">Redes sociales</h2>
                       <div class="feature-description">
                         <!-- <p>Projects with concept.</p> -->
-                        <span class="badge rounded-pill text-bg-primary">Creativity</span>
+                        <span class="badge rounded-pill text-bg-primary">Creatividad</span>
                         <span class="badge rounded-pill text-bg-primary">Marketing</span>
-                        <span class="badge rounded-pill text-bg-primary">Project Management</span>
-                        <!-- <span class="badge text-bg-primary">React</span> -->
+                        <span class="badge rounded-pill text-bg-primary">Gestión de proyectos</span>
+                        <span class="badge rounded-pill text-bg-primary">Ayuda al cliente</span>
                       </div>
                     </div>					
                   </div>	
@@ -328,9 +325,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 	  <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://randomuser.me/dist/all.js"></script>
 
