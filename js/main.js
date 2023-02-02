@@ -1,6 +1,5 @@
 $(function() {
 
-//Viewport
 let windowHeight = $(window).height();
 
 function adjustViewport() {
@@ -34,15 +33,13 @@ setTimeout(function(){
 }, 150)
 
 $(document).on('click', '#btnOtro', function() {
-	/* doc.deletePage(1) */
-	doc.setPage(2) 
-	
 	setTimeout(function(){
 		$('.fa-plus').closest('.job').find('p').slideDown();
 		$( ".fa-minus" ).trigger( "click" );
 	
 	}, 100)
 })
+
 $(document).on('click', '.openBtn', function() {
     
     if ($(this).hasClass('open')) {
@@ -58,7 +55,6 @@ $(document).on('click', '.openBtn', function() {
     }
   });
 
-//Anchor Smooth Scroll
    $('a[href*=#]:not([href=#])').on('click', function () {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         let target = $(this.hash);
@@ -78,56 +74,52 @@ let datosForPDF = []
 let objForPDF = {}
 
 let doc = new jsPDF({
-	format: 'legal'
-	
+	format: 'legal'	
 });
+
 function getStudiesForPDF() {
 
-	
 	$.getJSON("./studies.json", (data) => {
 		let keys = Object.keys(data.studies);
-		//let randomKey = keys[Math.floor(Math.random()*keys.length)];
+
 		let i= 0
 		for(k= 0; k < data.studies[randomKey].length; k++) {
-				console.log(data.studies[randomKey][k].titulo);
-				console.log(data.studies[randomKey][k].periodo);
-				console.log(data.studies[randomKey][k].institucion);
+			console.log(data.studies[randomKey][k].titulo);
+			console.log(data.studies[randomKey][k].periodo);
+			console.log(data.studies[randomKey][k].institucion);
 				
-				doc.text(20, 125+i, "Titulo: " + data.studies[randomKey][k].titulo);
-				doc.text(20, 135+i, "Periodo: " + data.studies[randomKey][k].periodo);
-				doc.text(20, 145+i, "Institucion: " + data.studies[randomKey][k].institucion);  
+			doc.text(20, 125+i, "Titulo: " + data.studies[randomKey][k].titulo);
+			doc.text(20, 135+i, "Periodo: " + data.studies[randomKey][k].periodo);
+			doc.text(20, 145+i, "Institucion: " + data.studies[randomKey][k].institucion);  
 
-				i += 35
-		}
-	
-	});
-	
+			i += 35
+		}	
+	});	
 }
 
 function getJobsForPDF() {
 	
 	$.getJSON("./jobs.json", (data) => {
 		let keys = Object.keys(data.jobs);
-		//let randomKey = keys[Math.floor(Math.random()*keys.length)];
+
 		let i= 0
 		for(k= 0; k < data.jobs[randomJob].length; k++) {
-				console.log(data.jobs[randomJob][k].puesto);
-				console.log(data.jobs[randomJob][k].lugar);
-				console.log(data.jobs[randomJob][k].periodo);
+			console.log(data.jobs[randomJob][k].puesto);
+			console.log(data.jobs[randomJob][k].lugar);
+			console.log(data.jobs[randomJob][k].periodo);
 				
-				doc.text(20, 210+i, data.jobs[randomJob][k].puesto);
-				doc.text(20, 220+i, data.jobs[randomJob][k].lugar);
-				doc.text(20, 230+i, data.jobs[randomJob][k].periodo);    
-	
+			doc.text(20, 210+i, data.jobs[randomJob][k].puesto);
+			doc.text(20, 220+i, data.jobs[randomJob][k].lugar);
+			doc.text(20, 230+i, data.jobs[randomJob][k].periodo);    
 		
-				i += 35
-		}
-		
+			i += 35
+		}	
 	})
-
 }
+
 let randomKey
 let randomJob
+
 function getDataFromJSON() {
 
 	const $showData = $("#show-data");
@@ -182,7 +174,7 @@ function getDataFromJSON() {
 
 		obj['job'] =  data.jobs[randomJob];
 		datos2.push(obj.job[0].puesto);
-		//console.log("puesto", datos2);
+		
 		let selector = document.getElementById("job1");
 		selector.innerHTML = datos2[0];
 		
@@ -224,26 +216,24 @@ function getDataFromJSON() {
 		$showData2.html(list2);
 
 		$raw.text(JSON.stringify(data, undefined, 2));
-		
-		//console.log("data.items", datos2)
-		//console.log(randomKey)
+
 	  });
 }
   getDataFromAPI()
   getDataFromJSON()
 //   dataToPDF()
   	
-  $(document).on('click', '#saveToPDF', function() {
+$(document).on('click', '#saveToPDF', function() {
 	dataToPDF()
-		setTimeout(function(){
-			doc.save('Test.pdf');
-		}, 3000)
-	})
+	setTimeout(function(){
+		doc.save('Test.pdf');
+	}, 2300)
+})
 
-	let datos = [];
-	let obj = {};
+let datos = [];
+let obj = {};
+
   function getDataFromAPI() {
-
 
 		$.ajax({
 			url: 'https://randomuser.me/api/',
@@ -286,7 +276,6 @@ function getDataFromJSON() {
 		}
 	
 		function getDirection(selectorID) {
-			//console.log("datos2: ", JSON.stringify(datos))
 			let selector = document.getElementById(selectorID);
 
 			selector.innerHTML = datos[0].number + " " + datos[0].nameStreet + " - " + datos[0].city + " - " + datos[0].country;
@@ -302,7 +291,6 @@ function getDataFromJSON() {
 	
 		function getImageData(data_gen, data_img) {
 	
-			//let imageURL = image
 			img.src = "https://api.allorigins.win/raw?url=https://randomuser.me/api/portraits/" + data_gen + "/" + data_img
 			
 			return img.src
@@ -328,22 +316,5 @@ function getDataFromJSON() {
 			doc.text(20, 200, "EXPERIENCIA");
 			
 			getJobsForPDF()
-		}, 2000 )
-
-		
+		}, 1800 )	
 	}
-	/* $(document).on('click', '#btnOtro', function() {
-		//alert('deleted')
-		doc.deletePage(1)
-		dataToPDF()
-	}) */
-
-//console.log("name", datos[0]["number"]); */	
-//{"image":"https://randomuser.me/api/portraits/women/33.jpg","namePerson":"Milla Klingenberg","number":287,"nameStreet":"Tors gate","city":"Rossnes","country":"Norway","edad":"62 años","email":"milla.klingenberg@example.com","telefono":"60276045"}
-
-/*
-var newURL="https://randomuser.me/api/portraits/women/33.jpg";
-console.log(newURL);
-var splitURL=newURL.toString().split("/");
-console.log(splitURL);
-*/
