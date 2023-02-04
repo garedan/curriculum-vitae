@@ -64,8 +64,10 @@
         <h1>Hola, soy <strong id="name2"></strong></h1>
         <p class="title2" id="edad" style="color: #fff;">32</p>
         <h2 id="job1">Designer & Web Developer</h2>
+        
+        <!-- Si trae otro usuario sin recargar, el pdf sobreescribe el anterior (???) -->
         <!-- <button onclick="getDataFromJSON(); getDataFromAPI(); dataToPDF();" id="btnOtro" class="btn btn-default btn3">Otro CV</button> -->
-        <button id="btnExpand" class="btn btn-default btn3">Expandir todo</button>
+        
       </div>
     </section>
     
@@ -145,11 +147,12 @@
               <h2 class="title-of-section title-border">Educacion</h2>
               <br>            
             </div>
+            
             <div id="valuediv" style="margin-left: -25px;">
 
-            </div>
-            
-            <button id="saveToPDF" class="btn btn-default btn3" style="margin: auto; display: block;">Guardar CV a PDF</button>
+            </div>            
+            <button id="btnExpand" class="btn btn-default" style="margin: 10px auto; display: block;">Expandir todo</button>
+            <button id="saveToPDF" class="btn btn-default" style="margin: auto; display: block;">Guardar CV a PDF</button>
           </div>
         </div>
         
@@ -170,7 +173,7 @@
                       </div>
                       <h2 class="feature-title">Diseño gráfico</h2>
                       <div class="feature-description">
-                        <!-- <p>Projects with concept.</p> -->
+
                         <span class="badge rounded-pill text-bg-primary">Tipografía</span>
                         <span class="badge rounded-pill text-bg-primary">Hacer presentaciones</span>
                         <span class="badge rounded-pill text-bg-primary">Comunicación</span>
@@ -178,8 +181,7 @@
                       </div>
                     </div>					
                   </div>
-                  <!-- /item -->
-                  <!-- item -->
+
                   <div class="col-12 col-md-3">
                     <div class="feature-item">
                       <div class="feature-icon">
@@ -197,8 +199,7 @@
                       </div>
                     </div>					
                   </div>
-                  <!-- /item -->
-                  <!-- item -->
+
                   <div class="col-12 col-md-3">
                     <div class="feature-item">
                       <div class="feature-icon">
@@ -214,8 +215,7 @@
                       </div>
                     </div>					
                   </div>
-                  <!-- /item -->
-                  <!-- item -->
+
                   <div class="col-12 col-md-3">
                     <div class="feature-item">
                       <div class="feature-icon">

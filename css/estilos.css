@@ -111,36 +111,7 @@ p {
 .hero-principal h2 {
     font-size: 1.5rem;
 }
-.sobre-mi {
-    height: 400px;
-    padding: 10px;
-    background-color: #ffd171;
-}
-.experiencia {
-    padding: 5px 40px 60px 40px;
-    background: #ffd171;
-}
-.experiencia .columna {
-    padding: 20px;
-    border: 2px solid #8080804d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: all .2s ease-in;
-    background: #ffd171;
-}
-.experiencia i {
-    font-size: 2.5rem;
-    color: #7ade30;
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%}
-.experiencia-titulo {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 10px 0;
-}
+
 .badge {
     margin: 5px;
 }
@@ -477,39 +448,39 @@ p {
     .navbar-brand {
     display: none;
 }
-.sobre-mi {
-    height: 400px;
-}
-.contact-box {
+
+/* .contact-box {
     margin-left: -35px;
-}
+} */
 .contact-box form {
     margin-left: 20px;
 }
 }
 @media screen and (max-width:576px) {
     .hero-inferior-imagen {
-    max-width: 600px;
-}
-.sobre-mi {
-    height: 500px;
-}
-.contact-box {
-    margin-left: 0;
-}
-.contact-box form {
-    margin-left: 0;
-}
+        max-width: 600px;
+    }
+
+    .contact-box {
+        margin-left: 0;
+    }
+    .contact-box form {
+        margin-left: 0;
+    }
 }
 
 @media (min-width:992px) {
     .about-container .row {
-    margin-left: 0;
-}
+        margin-left: 0;
+    }
 }
 
 @media(max-width: 450px) {
     .contOut .contIn .moreInfo, .contOut .contIn p.tagline {
       font-size: 12px;
     }
+}
+
+  #job1 {
+    color: white;
   }
