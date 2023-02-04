@@ -484,3 +484,9 @@ p {
   #job1 {
     color: white;
   }
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: max-content;
+    }
+}
