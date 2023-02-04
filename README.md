@@ -9,4 +9,4 @@ Vista previa del trabajo en curso
 
 ![]("preview.png")
 
-![Alt text](https://github.com/garedan/curriculum-vitae/blob/7218210e83830a647bb71cc6886cf44a2159b063/preview.png?raw=true "")
+![Alt text](https://github.com/garedan/curriculum-vitae/blob/c848bc69866f5d81862a79708127e90cacbbf09e/preview.jpg?raw=true "")
