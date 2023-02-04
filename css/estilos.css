@@ -449,9 +449,9 @@ p {
     display: none;
 }
 
-    .contact-box {
+    /*.contact-box {
         margin-left: -35px;
-    } 
+    } */
     .contact-box form {
         margin-left: 20px;
     }
