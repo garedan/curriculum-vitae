@@ -449,12 +449,12 @@ p {
     display: none;
 }
 
-/* .contact-box {
-    margin-left: -35px;
-} */
-.contact-box form {
-    margin-left: 20px;
-}
+    .contact-box {
+        margin-left: -35px;
+    } 
+    .contact-box form {
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width:576px) {
     .hero-inferior-imagen {
