@@ -485,8 +485,8 @@ p {
     color: white;
   }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .container, .container-sm {
-        max-width: max-content;
+        max-width: max-content; 
     }
-}
+  } */
