@@ -290,8 +290,15 @@ let obj = {};
 		img.crossOrigin = "anonymous"; 
 	
 		function getImageData(data_gen, data_img) {
-	
-			img.src = "https://api.allorigins.win/raw?url=https://randomuser.me/api/portraits/" + data_gen + "/" + data_img
+			
+			fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://randomuser.me/api/portraits/' + data_gen + '/' + data_img)}`)
+			.then(response => {
+				if (response.ok) return response.json()
+				throw new Error('Network response was not ok.')
+			})
+			.then(data => img.src = data.contents);
+
+			//img.src = "https://api.allorigins.win/raw?url=https%3A//randomuser.me/api/portraits/" + data_gen + "/" + data_img
 			
 			return img.src
 		}
